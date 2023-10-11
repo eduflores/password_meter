@@ -61,11 +61,13 @@ curl --location 'http://localhost:8080/api/users'
 Get Password Strength: 
 
 //The last paremeter is a PathVariable and must be ENCODED in Base64
+
 curl --location 'http://localhost:8080/api/pwd-str/MTIzNDU2'
 
 Create User: 
 
 //You can create a user without the "parentUser" field
+
 curl --location 'http://localhost:8080/api/users' \
 --header 'Content-Type: application/json' \
 --data '{
@@ -74,6 +76,7 @@ curl --location 'http://localhost:8080/api/users' \
 }'
 
 //You can create a user with the "parentUser" field
+
 curl --location 'http://localhost:8080/api/users' \
 --header 'Content-Type: application/json' \
 --data '{
